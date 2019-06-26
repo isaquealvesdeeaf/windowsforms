@@ -194,6 +194,7 @@
             this.btn_novo.TabIndex = 15;
             this.btn_novo.Text = "Novo";
             this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // btn_cancelar
             // 

@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
         }
         public static usuario[] Usuario = new usuario[10];
         public static cliente[] Cliente = new cliente[10];
-        public static fornecedor[] Fornecedor = new fornecedor[];
+        public static fornecedor[] Fornecedor = new fornecedor[10];
         public Form1()
         {
             InitializeComponent();

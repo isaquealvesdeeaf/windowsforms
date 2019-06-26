@@ -31,3 +31,6 @@ C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\obj\Debug\Win
 C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\aluno1\Desktop\13\cd_visualStudio-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
