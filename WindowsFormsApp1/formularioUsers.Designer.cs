@@ -240,6 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_proximo);
             this.Controls.Add(this.btn_salvar);
@@ -260,6 +261,8 @@
             this.Controls.Add(this.txt_login);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.txt_codigo);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formularioUsers";
             this.Text = "formularioUsers";
             this.Load += new System.EventHandler(this.formularioUsers_Load);
