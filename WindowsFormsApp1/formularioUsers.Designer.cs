@@ -174,6 +174,7 @@
             this.btn_alterar.TabIndex = 13;
             this.btn_alterar.Text = "Alterar";
             this.btn_alterar.UseVisualStyleBackColor = true;
+            this.btn_alterar.Click += new System.EventHandler(this.btn_alterar_Click);
             // 
             // btn_pesquisar
             // 
@@ -205,6 +206,7 @@
             this.btn_cancelar.TabIndex = 16;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_salvar
             // 
@@ -215,6 +217,7 @@
             this.btn_salvar.TabIndex = 17;
             this.btn_salvar.Text = "Salvar";
             this.btn_salvar.UseVisualStyleBackColor = true;
+            this.btn_salvar.Click += new System.EventHandler(this.btn_salvar_Click);
             // 
             // btn_proximo
             // 

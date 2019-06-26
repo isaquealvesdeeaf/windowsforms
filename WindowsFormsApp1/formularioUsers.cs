@@ -80,7 +80,8 @@ namespace WindowsFormsApp1
 
         private void formularioUsers_Load(object sender, EventArgs e)
         {
-
+            Desabilita();
+            mostra();
         }
 
         private void btn_sair_Click(object sender, EventArgs e)
@@ -89,6 +90,62 @@ namespace WindowsFormsApp1
         }
 
         private void btn_novo_Click(object sender, EventArgs e)
+        {
+            //se a quantidade de usuarios registrador for menos que 10, registre
+            if (Form1.contUser < 10)
+            {
+                //cria um novo ID para o usuário que será registrado
+                txt_codigo.Text = (Form1.contUser + 1).ToString();
+                //limpa os campos do formulário para que o usuário possa preenche-los
+                txt_nome.Text = "";
+                txt_nivel.Text = "";
+                txt_login.Text = "";
+                txt_senha.Text = "";
+                //habilita o formulário
+                Habilita();
+                //coloca o cursor dentro do input txtNome
+                txt_nome.Focus();
+                //torna a variavel booleana verdadeira (para avisar que é um novo usuario e nao a atualizacao de um existente)
+                novoCadastro = true;
+            }
+            else
+            {
+                //se a quantidade de usuariSos registrador for maior ou igual a 10, envia a mensagem de erro.
+                MessageBox.Show("Operação Inválida: nao é possivel cadastrar mais usuários");
+            }
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            Desabilita();
+        }
+
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+            Desabilita();
+
+            int nr = 0;
+
+            if (novoCadastro)
+            {
+                atual = Form1.contUser;
+                nr = Form1.contUser++;
+            }
+            else
+            {
+                nr = int.Parse(txt_codigo.Text) - 1;
+            }
+
+            Form1.Usuario[nr].cd_usuario = int.Parse(txt_codigo.Text);
+            Form1.Usuario[nr].nm_usuario = txt_nome.Text;
+            Form1.Usuario[nr].sg_nivel = txt_nivel.Text;
+            Form1.Usuario[nr].nm_login = txt_login.Text;
+            Form1.Usuario[nr].ds_senha = txt_senha.Text;
+
+            novoCadastro = false;
+        }
+
+        private void btn_alterar_Click(object sender, EventArgs e)
         {
 
         }
